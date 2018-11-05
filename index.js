@@ -21,9 +21,9 @@ npm install queue
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
     console.log(`in ${client.guilds.size} servers `)
-    console.log(`[Codes] ${client.users.size}`)
+    console.log(`[Peery] ${client.users.size}`)
 });
-const prefix = "2"
+const prefix = "!"
 client.on('message', async msg => {
     if (msg.author.bot) return undefined;
     if (!msg.content.startsWith(prefix)) return undefined;
